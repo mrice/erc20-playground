@@ -1,11 +1,10 @@
 pragma solidity ^0.4.24;
 
-import "openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
-contract RiceFamilyToken is StandardToken, Ownable {
+contract RiceFamilyToken is ERC20, Ownable {
     constructor() public {
-        totalSupply_ = 100000000000;
-        balances[msg.sender] = totalSupply_;
+        _mint(msg.sender, 100000000000);
     }
 }
