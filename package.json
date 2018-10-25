@@ -1,5 +1,6 @@
 {
-  "devDependencies": {
-    "openzeppelin-solidity": "^1.10.0"
+  "devDependencies": {},
+  "dependencies": {
+    "openzeppelin-solidity": "^1.12.0"
   }
 }
